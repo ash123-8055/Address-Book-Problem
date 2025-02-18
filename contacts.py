@@ -86,7 +86,7 @@ class AddressBookMain:
         Return: None
         """
 
-        print("Updating the contacts again...\nRe-Enter the details: \n")
+        print("Updating the contacts again.....\nRe-Enter the details: \n")
         try:
             self.first_name=input("Enter the first name: ")
             self.last_name=input("Enter the last name: ")
