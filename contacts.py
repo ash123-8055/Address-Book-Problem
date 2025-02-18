@@ -121,7 +121,7 @@ class AddressBookMain:
 
         self.address_book[self.first_name+" "+self.last_name]=self.contact_dict
         logger.info("Updated the dictionary successfully.")
-        print("Updated the Dictionary!!")
+        print("Updated the Dictionary!!\n")
 
     def delete_contact(self):
         """
@@ -186,7 +186,10 @@ def main():
                     contact_one.print_contact()
                 
                 case "2":
-                    contact_one.update_contact()
+                    counter=int(input("How many contacts you have decided to add: "))
+                    logger.info(f"The user has decided to add {counter} contacts")
+                    for i in range(counter):
+                        contact_one.update_contact()
                 
                 case "3":
                     contact_one.delete_contact()
