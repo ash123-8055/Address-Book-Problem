@@ -76,3 +76,34 @@
 2025-02-18 14:53:27,858, INFO Created the dictionary successfully.
 2025-02-18 14:53:38,399, INFO Updated the dictionary successfully.
 2025-02-18 14:53:44,578, INFO Printed the details successfully.
+2025-02-18 15:26:53,475, INFO Created the dictionary successfully.
+2025-02-18 15:27:09,579, ERROR Value Error: The zipcode should only contain numbers.
+2025-02-18 15:27:09,579, INFO Updated the dictionary successfully.
+2025-02-18 15:27:24,907, INFO Updated the dictionary successfully.
+2025-02-18 15:27:26,312, INFO Printed the details successfully.
+2025-02-18 15:29:26,189, INFO Printed the details successfully.
+2025-02-18 15:29:40,991, INFO Printed the details successfully.
+2025-02-18 15:31:20,437, INFO Created the dictionary successfully.
+2025-02-18 15:32:05,675, INFO Updated the dictionary successfully.
+2025-02-18 15:32:19,845, INFO Updated the dictionary successfully.
+2025-02-18 15:32:20,969, INFO Printed the details successfully.
+2025-02-18 15:32:46,879, INFO Removed a contact from Address Book.
+2025-02-18 15:32:48,215, INFO Printed the details successfully.
+2025-02-18 15:33:12,491, INFO Removed a contact from Address Book.
+2025-02-18 15:33:13,881, INFO Printed the details successfully.
+2025-02-18 15:33:19,503, INFO Removed a contact from Address Book.
+2025-02-18 15:33:20,145, INFO Printed the details successfully.
+2025-02-18 16:42:51,133, INFO Created the dictionary successfully.
+2025-02-18 16:43:08,648, ERROR Value Error: name 'address_book' is not defined
+2025-02-18 16:43:40,668, INFO Created the dictionary successfully.
+2025-02-18 16:43:46,515, INFO Printed the details successfully.
+2025-02-18 16:43:55,266, INFO Removed a contact from Address Book.
+2025-02-18 16:44:15,920, WARNING The Address is Empty and tried to delete a contact.
+2025-02-18 16:44:18,382, WARNING Trying to print a empty Address Book.
+2025-02-18 16:44:18,382, INFO Printed the details successfully.
+2025-02-18 16:44:30,431, INFO Updated the dictionary successfully.
+2025-02-18 16:44:31,370, INFO Printed the details successfully.
+2025-02-18 16:44:36,438, INFO Removed a contact from Address Book.
+2025-02-18 16:44:37,529, WARNING Trying to print a empty Address Book.
+2025-02-18 16:44:37,530, INFO Printed the details successfully.
+2025-02-18 16:44:38,628, WARNING The Address is Empty and tried to delete a contact.
