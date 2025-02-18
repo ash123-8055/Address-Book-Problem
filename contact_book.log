@@ -1,0 +1,78 @@
+2025-02-17 16:58:17,022, INFO Created the dictionary successfully.
+2025-02-17 16:58:17,025, INFO Printed the dictionary successfully.
+2025-02-17 16:59:41,555, INFO Created the dictionary successfully.
+2025-02-17 16:59:41,557, INFO Printed the dictionary successfully.
+2025-02-18 10:32:07,645, ERROR Value Error: The zipcode should only contain numbers.
+2025-02-18 10:33:55,906, INFO Created the dictionary successfully.
+2025-02-18 10:33:55,908, INFO Printed the dictionary successfully.
+2025-02-18 11:48:13,680, ERROR Value Error: name 'AddressbookMain' is not defined
+2025-02-18 11:48:48,002, ERROR Value Error: 'AddressBookMain' object has no attribute 'first_name'
+2025-02-18 11:53:44,409, INFO Created the dictionary successfully.
+2025-02-18 11:54:08,206, INFO Printed the details successfully.
+2025-02-18 11:54:36,116, INFO Updated the dictionary successfully.
+2025-02-18 11:54:45,087, INFO Printed the details successfully.
+2025-02-18 11:54:51,766, ERROR Value Error: invalid literal for int() with base 10: 'ads'
+2025-02-18 11:55:57,347, INFO Created the dictionary successfully.
+2025-02-18 11:56:06,579, INFO Printed the details successfully.
+2025-02-18 11:56:15,621, INFO Printed the details successfully.
+2025-02-18 11:56:28,311, INFO Updated the dictionary successfully.
+2025-02-18 11:56:30,842, INFO Printed the details successfully.
+2025-02-18 11:56:38,733, ERROR Value Error: invalid literal for int() with base 10: 'asd'
+2025-02-18 11:57:18,330, INFO Created the dictionary successfully.
+2025-02-18 11:57:21,023, INFO Printed the details successfully.
+2025-02-18 11:57:33,693, INFO Updated the dictionary successfully.
+2025-02-18 11:57:36,060, INFO Printed the details successfully.
+2025-02-18 11:58:34,105, INFO Created the dictionary successfully.
+2025-02-18 11:58:35,645, INFO Printed the details successfully.
+2025-02-18 11:58:44,578, INFO Updated the dictionary successfully.
+2025-02-18 14:16:10,634, ERROR Value Error: name 'contact_dict' is not defined
+2025-02-18 14:17:36,322, ERROR Value Error: 'str' object has no attribute 'book'
+2025-02-18 14:17:47,027, ERROR Value Error: 'str' object has no attribute 'book'
+2025-02-18 14:18:48,856, ERROR Value Error: 'AddressBookMain' object has no attribute 'address_book'
+2025-02-18 14:19:32,522, INFO Created the dictionary successfully.
+2025-02-18 14:19:43,732, ERROR Value Error: 'str' object has no attribute 'book'
+2025-02-18 14:20:05,653, INFO Created the dictionary successfully.
+2025-02-18 14:20:07,661, INFO Printed the details successfully.
+2025-02-18 14:21:35,300, INFO Printed the details successfully.
+2025-02-18 14:21:37,165, INFO Printed the details successfully.
+2025-02-18 14:21:47,058, INFO Created the dictionary successfully.
+2025-02-18 14:21:48,168, ERROR Value Error: 'dict' object has no attribute 'item'
+2025-02-18 14:22:04,810, INFO Created the dictionary successfully.
+2025-02-18 14:22:05,814, ERROR Value Error: name 'value1' is not defined
+2025-02-18 14:22:23,556, INFO Created the dictionary successfully.
+2025-02-18 14:22:24,577, INFO Printed the details successfully.
+2025-02-18 14:25:24,680, ERROR Value Error: name 'except_hand' is not defined
+2025-02-18 14:25:24,680, ERROR Value Error: 'AddressBookMain' object has no attribute '_name'
+2025-02-18 14:26:49,344, INFO Created the dictionary successfully.
+2025-02-18 14:27:04,891, ERROR Value Error: name 'except_hand' is not defined
+2025-02-18 14:27:04,892, ERROR Value Error: 'AddressBookMain' object has no attribute '_name'
+2025-02-18 14:28:49,732, INFO Created the dictionary successfully.
+2025-02-18 14:28:51,233, INFO Printed the details successfully.
+2025-02-18 14:29:41,246, ERROR Value Error: name 'except_hand' is not defined
+2025-02-18 14:29:41,246, INFO Updated the dictionary successfully.
+2025-02-18 14:29:42,718, INFO Printed the details successfully.
+2025-02-18 14:30:25,991, ERROR Value Error: The zipcode should only contain numbers.
+2025-02-18 14:30:35,921, INFO Created the dictionary successfully.
+2025-02-18 14:30:37,774, INFO Printed the details successfully.
+2025-02-18 14:30:55,110, ERROR Value Error: name 'except_hand' is not defined
+2025-02-18 14:30:55,110, INFO Updated the dictionary successfully.
+2025-02-18 14:34:53,194, ERROR Value Error: name 'except_hand' is not defined
+2025-02-18 14:34:53,194, INFO Updated the dictionary successfully.
+2025-02-18 14:34:55,100, INFO Printed the details successfully.
+2025-02-18 14:45:37,811, INFO Created the dictionary successfully.
+2025-02-18 14:45:49,119, ERROR Value Error: name 'except_hand' is not defined
+2025-02-18 14:45:49,119, INFO Updated the dictionary successfully.
+2025-02-18 14:46:33,979, ERROR Value Error: name 'except_hand' is not defined
+2025-02-18 14:46:33,979, INFO Updated the dictionary successfully.
+2025-02-18 14:47:51,481, INFO Created the dictionary successfully.
+2025-02-18 14:48:01,642, INFO Updated the dictionary successfully.
+2025-02-18 14:48:31,954, INFO Printed the details successfully.
+2025-02-18 14:49:39,850, INFO Created the dictionary successfully.
+2025-02-18 14:49:52,797, INFO Updated the dictionary successfully.
+2025-02-18 14:50:06,387, INFO Updated the dictionary successfully.
+2025-02-18 14:50:07,052, INFO Printed the details successfully.
+2025-02-18 14:50:52,551, INFO Updated the dictionary successfully.
+2025-02-18 14:50:53,584, INFO Printed the details successfully.
+2025-02-18 14:53:27,858, INFO Created the dictionary successfully.
+2025-02-18 14:53:38,399, INFO Updated the dictionary successfully.
+2025-02-18 14:53:44,578, INFO Printed the details successfully.
