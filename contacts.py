@@ -69,6 +69,10 @@ class AddressBookMain:
         Return: None
         """
 
+        if not self.address_book:
+            print("The Address book is empty!!")
+            logger.warning("Trying to print a empty Address Book.")
+
         print()
         for key,value in self.address_book.items():
             print(f"\nName - {key}")
@@ -118,7 +122,31 @@ class AddressBookMain:
         self.address_book[self.first_name+" "+self.last_name]=self.contact_dict
         logger.info("Updated the dictionary successfully.")
         print("Updated the Dictionary!!")
-    
+
+    def delete_contact(self):
+        """
+        Description: This function removes the contact from the Address Book
+
+        Parameter: self: object
+
+        Return: None
+        """
+
+        if not self.address_book:
+            print("The Address Book is empty!! Cant delete anything..")
+            logger.warning("The Address is Empty and tried to delete a contact.")
+        
+        else:
+            print("Enter the first name and last name to delete the contact..")
+            self.first_name=input("Enter the First name: ")
+            self.last_name=input("Enter the Last name: ")
+            if (self.first_name+" "+self.last_name) in self.address_book.keys():
+                self.address_book.pop(self.first_name+" "+self.last_name)
+                print(f"\nRemoved {self.first_name+" "+self.last_name} from the Address Book.")
+                logger.info("Removed a contact from Address Book.")
+
+            else:
+                print(f"The {self.first_name+" "+self.last_name} was not in the Address Book.")
 
 def main():
     """
@@ -149,7 +177,7 @@ def main():
             logger.error("Error on the phone number.")
         
         contact_one=AddressBookMain(first_name,last_name,address,city,state,zipcode,phone_number,email)
-        print("\nEnter the choice:\n1. Print the Contact.\n2. Update the Contact.\n3. Exit")
+        print("\nEnter the choice:\n1. Print the Contact.\n2. Update the Contact.\n3. Delete contact\n4. Exit")
         choice=input("\nThe Choice: ")
 
         while True:
@@ -161,15 +189,17 @@ def main():
                     contact_one.update_contact()
                 
                 case "3":
+                    contact_one.delete_contact()
+
+                case "4":
                     print("Exiting the program!!!")
                     break
 
                 case default:
                     print("\nInvalid Input!\nTry the other options available!")
 
-            print("\nEnter the choice:\n1. Print the Contact.\n2. Update the Contact.\n3. Exit")
+            print("\nEnter the choice:\n1. Print the Contact.\n2. Update the Contact.\n3. Delete contact\n4. Exit")
             choice=input("\nThe Choice: ")
-
 
     except ValueError as ve:
         print(f"Invalid error: {ve}")
