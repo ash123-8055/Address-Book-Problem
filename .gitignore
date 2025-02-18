@@ -171,4 +171,4 @@ cython_debug/
 .pypirc
 
 #logfile
-contact_book.log
+#contact_book.log
