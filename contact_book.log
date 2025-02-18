@@ -107,3 +107,11 @@
 2025-02-18 16:44:37,529, WARNING Trying to print a empty Address Book.
 2025-02-18 16:44:37,530, INFO Printed the details successfully.
 2025-02-18 16:44:38,628, WARNING The Address is Empty and tried to delete a contact.
+2025-02-18 17:01:38,319, INFO Created the dictionary successfully.
+2025-02-18 17:01:45,491, INFO The user has decided to add 3 contacts
+2025-02-18 17:02:04,152, INFO Updated the dictionary successfully.
+2025-02-18 17:02:33,758, INFO Updated the dictionary successfully.
+2025-02-18 17:02:44,202, INFO Updated the dictionary successfully.
+2025-02-18 17:02:48,577, INFO Printed the details successfully.
+2025-02-18 17:06:37,565, INFO Removed a contact from Address Book.
+2025-02-18 17:06:38,712, INFO Printed the details successfully.
