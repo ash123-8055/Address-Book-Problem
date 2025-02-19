@@ -115,3 +115,162 @@
 2025-02-18 17:02:48,577, INFO Printed the details successfully.
 2025-02-18 17:06:37,565, INFO Removed a contact from Address Book.
 2025-02-18 17:06:38,712, INFO Printed the details successfully.
+2025-02-19 11:11:52,892, INFO Created the dictionary successfully.
+2025-02-19 11:14:10,765, INFO Created the dictionary successfully.
+2025-02-19 11:15:01,473, ERROR Value Error: name 'system_book' is not defined
+2025-02-19 11:16:30,014, INFO Created the dictionary successfully.
+2025-02-19 11:19:39,282, INFO Created the dictionary successfully.
+2025-02-19 11:19:56,929, INFO The user has decided to add 1 contacts
+2025-02-19 11:20:08,331, INFO Updated the dictionary successfully.
+2025-02-19 11:28:02,417, ERROR Value Error: The zipcode should only contain numbers.
+2025-02-19 11:28:18,933, INFO Created the dictionary successfully.
+2025-02-19 11:28:23,440, INFO Printed the details successfully.
+2025-02-19 11:30:06,269, INFO Created the dictionary successfully.
+2025-02-19 11:30:10,292, ERROR Value Error: name 'key2' is not defined
+2025-02-19 11:30:31,805, INFO Created the dictionary successfully.
+2025-02-19 11:30:36,194, ERROR Value Error: name 'value1' is not defined
+2025-02-19 11:30:55,638, INFO Created the dictionary successfully.
+2025-02-19 11:30:58,882, INFO Printed the details successfully.
+2025-02-19 11:31:38,637, INFO Created the dictionary successfully.
+2025-02-19 11:31:42,249, INFO Printed the details successfully.
+2025-02-19 11:31:56,817, INFO The user has decided to add 2 contacts
+2025-02-19 11:32:09,698, INFO Updated the dictionary successfully.
+2025-02-19 11:32:25,058, INFO Updated the dictionary successfully.
+2025-02-19 11:33:09,977, INFO Printed the details successfully.
+2025-02-19 11:35:19,134, INFO Created the dictionary successfully.
+2025-02-19 11:39:52,674, INFO The user has decided to add 3 contacts
+2025-02-19 11:40:08,139, INFO Updated the dictionary successfully.
+2025-02-19 11:40:30,944, INFO Updated the dictionary successfully.
+2025-02-19 11:40:47,786, INFO Updated the dictionary successfully.
+2025-02-19 11:40:55,006, WARNING Trying to print a empty Address Book.
+2025-02-19 11:40:55,010, INFO Printed the details successfully.
+2025-02-19 11:44:04,013, INFO Created the dictionary successfully.
+2025-02-19 11:44:31,078, INFO The user has decided to add 2 contacts
+2025-02-19 11:44:44,371, INFO Updated the dictionary successfully.
+2025-02-19 11:45:00,213, INFO Updated the dictionary successfully.
+2025-02-19 11:45:51,272, INFO Printed the details successfully.
+2025-02-19 11:46:30,998, INFO Printed the details successfully.
+2025-02-19 11:47:59,613, INFO Created the dictionary successfully.
+2025-02-19 11:48:08,955, INFO The user has decided to add 2 contacts
+2025-02-19 11:48:23,578, INFO Updated the dictionary successfully.
+2025-02-19 11:56:07,865, INFO Updated the dictionary successfully.
+2025-02-19 11:56:22,472, INFO Printed the details successfully.
+2025-02-19 11:58:04,919, ERROR Value Error: name 'seld' is not defined
+2025-02-19 11:58:25,634, INFO Created the dictionary successfully.
+2025-02-19 12:07:58,638, INFO Printed the details successfully.
+2025-02-19 12:08:33,971, INFO Printed the details successfully.
+2025-02-19 12:09:53,995, INFO The user has decided to add 2 contacts
+2025-02-19 12:10:03,092, INFO Updated the dictionary successfully.
+2025-02-19 12:10:15,648, INFO Updated the dictionary successfully.
+2025-02-19 12:10:21,074, INFO Printed the details successfully.
+2025-02-19 12:17:02,582, INFO Created the dictionary successfully.
+2025-02-19 12:17:06,008, INFO Printed the details successfully.
+2025-02-19 12:18:08,094, INFO Created the dictionary successfully.
+2025-02-19 12:18:10,948, INFO The user has decided to add 3 contacts
+2025-02-19 12:18:24,531, INFO Updated the dictionary successfully.
+2025-02-19 12:18:58,853, INFO Updated the dictionary successfully.
+2025-02-19 12:19:18,023, INFO Updated the dictionary successfully.
+2025-02-19 12:19:22,875, INFO Printed the details successfully.
+2025-02-19 12:19:36,212, INFO The user has decided to add 1 contacts
+2025-02-19 12:19:48,356, INFO Updated the dictionary successfully.
+2025-02-19 12:19:51,249, INFO Printed the details successfully.
+2025-02-19 12:21:29,065, ERROR Value Error: 'dict' object has no attribute 'append'
+2025-02-19 12:22:34,926, ERROR Value Error: 'Book1'
+2025-02-19 12:33:05,253, ERROR Value Error: 'Book1'
+2025-02-19 12:35:40,563, ERROR Value Error: 'Book1'
+2025-02-19 12:37:56,837, INFO Created the dictionary successfully.
+2025-02-19 12:38:00,912, INFO Printed the details successfully.
+2025-02-19 12:38:51,034, INFO Created the dictionary successfully.
+2025-02-19 12:38:55,248, INFO The user has decided to add 3 contacts
+2025-02-19 12:39:08,777, INFO Updated the dictionary successfully.
+2025-02-19 12:39:21,045, INFO Updated the dictionary successfully.
+2025-02-19 12:39:32,108, INFO Updated the dictionary successfully.
+2025-02-19 12:39:44,510, INFO Printed the details successfully.
+2025-02-19 12:39:54,933, INFO The user has decided to add 1 contacts
+2025-02-19 12:40:04,739, INFO Updated the dictionary successfully.
+2025-02-19 12:40:11,431, INFO Printed the details successfully.
+2025-02-19 12:41:13,475, INFO Created the dictionary successfully.
+2025-02-19 12:41:18,079, INFO The user has decided to add 3 contacts
+2025-02-19 12:41:29,738, INFO Updated the dictionary successfully.
+2025-02-19 12:41:39,801, INFO Updated the dictionary successfully.
+2025-02-19 12:42:04,870, INFO Updated the dictionary successfully.
+2025-02-19 12:42:08,339, INFO Printed the details successfully.
+2025-02-19 12:43:03,071, ERROR Value Error: argument of type 'builtin_function_or_method' is not iterable
+2025-02-19 14:18:52,536, INFO Created the dictionary successfully.
+2025-02-19 14:19:01,126, ERROR Value Error: name 'system_book' is not defined
+2025-02-19 14:19:28,187, INFO Created the dictionary successfully.
+2025-02-19 14:19:35,104, ERROR Value Error: name 'system_book' is not defined
+2025-02-19 14:20:00,542, INFO Created the dictionary successfully.
+2025-02-19 14:20:30,404, ERROR Value Error: string indices must be integers, not 'str'
+2025-02-19 14:24:24,698, INFO Created the dictionary successfully.
+2025-02-19 14:24:31,983, ERROR Value Error: unhashable type: 'dict_keys'
+2025-02-19 14:25:23,303, INFO Created the dictionary successfully.
+2025-02-19 14:25:29,137, INFO Removed a contact from Address Book.
+2025-02-19 14:25:36,309, INFO Printed the details successfully.
+2025-02-19 14:54:46,700, INFO Created the dictionary successfully.
+2025-02-19 14:55:54,832, INFO Removed a contact from Address Book.
+2025-02-19 14:56:02,984, INFO Printed the details successfully.
+2025-02-19 16:56:57,192, INFO Uploaded a contact into the system
+2025-02-19 16:56:57,192, INFO Created the dictionary successfully.
+2025-02-19 16:56:58,435, ERROR Value Error: name 'print_address_book' is not defined
+2025-02-19 16:57:38,032, INFO Uploaded a contact into the system
+2025-02-19 16:57:38,032, INFO Created the dictionary successfully.
+2025-02-19 16:57:39,595, INFO The Address Book available in the system was printed.
+2025-02-19 16:57:47,233, INFO Removed a contact from Address Book.
+2025-02-19 16:58:00,004, INFO The user has decided to add 0 contacts
+2025-02-19 16:58:05,894, INFO The Address Book available in the system was printed.
+2025-02-19 16:58:13,088, WARNING Tried to delete a contact which wasn't there in the Address Book.
+2025-02-19 16:59:04,623, INFO Uploaded a contact into the system
+2025-02-19 16:59:04,623, INFO Created the dictionary successfully.
+2025-02-19 16:59:06,567, INFO The Address Book available in the system was printed.
+2025-02-19 16:59:17,852, INFO Printed the Contact details successfully.
+2025-02-19 16:59:50,809, INFO The Address Book available in the system was printed.
+2025-02-19 17:00:00,593, INFO Removed a contact from Address Book.
+2025-02-19 17:24:22,570, INFO Started the Script!!!
+2025-02-19 17:24:35,668, INFO Uploaded a contact into the system
+2025-02-19 17:24:43,071, INFO The user has decided to add 3 contacts
+2025-02-19 17:24:52,260, INFO Updated the dictionary successfully.
+2025-02-19 17:25:05,980, INFO Updated the dictionary successfully.
+2025-02-19 17:25:15,376, INFO Updated the dictionary successfully.
+2025-02-19 17:25:17,842, INFO The Address Book available in the system was printed.
+2025-02-19 17:25:20,879, INFO Printed the Contact details successfully.
+2025-02-19 17:25:51,410, INFO The Address Book available in the system was printed.
+2025-02-19 17:26:29,064, INFO Removed a contact from Address Book.
+2025-02-19 17:26:29,064, INFO The System has no Address book!
+2025-02-19 17:26:35,106, INFO The System has no Address book!
+2025-02-19 17:33:14,309, INFO Closed the Script!!!!
+2025-02-19 17:33:17,127, INFO Started the Script!!!
+2025-02-19 17:33:26,636, INFO Uploaded a contact into the system
+2025-02-19 17:33:30,335, INFO The user has decided to add 1 contacts
+2025-02-19 17:33:40,642, INFO Updated the dictionary successfully.
+2025-02-19 17:33:42,781, INFO The Address Book available in the system was printed.
+2025-02-19 17:34:06,961, INFO Removed a contact from Address Book.
+2025-02-19 17:34:11,510, INFO The Address Book available in the system was printed.
+2025-02-19 17:35:27,850, INFO Closed the Script!!!!
+2025-02-19 17:35:30,100, INFO Started the Script!!!
+2025-02-19 17:35:40,855, INFO Uploaded a contact into the system
+2025-02-19 17:35:46,126, INFO The user has decided to add 2 contacts
+2025-02-19 17:35:58,771, INFO Updated the dictionary successfully.
+2025-02-19 17:36:10,251, INFO Updated the dictionary successfully.
+2025-02-19 17:36:16,329, INFO The Address Book available in the system was printed.
+2025-02-19 17:36:31,861, INFO Removed a contact from Address Book.
+2025-02-19 17:36:33,842, INFO The Address Book available in the system was printed.
+2025-02-19 17:36:35,643, INFO Printed the Contact details successfully.
+2025-02-19 17:36:40,426, INFO The Address Book available in the system was printed.
+2025-02-19 17:36:54,952, INFO Removed a contact from Address Book.
+2025-02-19 17:36:57,813, INFO The Address Book available in the system was printed.
+2025-02-19 17:37:03,323, INFO Printed the Contact details successfully.
+2025-02-19 17:37:53,653, INFO Closed the Script!!!!
+2025-02-19 17:37:56,085, INFO Started the Script!!!
+2025-02-19 17:38:06,583, INFO Uploaded a contact into the system
+2025-02-19 17:38:10,127, INFO The Address Book available in the system was printed.
+2025-02-19 17:38:10,745, INFO Printed the Contact details successfully.
+2025-02-19 17:38:17,938, INFO The Address Book available in the system was printed.
+2025-02-19 17:38:21,299, WARNING The User tried accessing a address book which doesn't exist.
+2025-02-19 17:38:27,992, INFO The user has decided to add 1 contacts
+2025-02-19 17:38:40,214, INFO Updated the dictionary successfully.
+2025-02-19 17:38:43,285, INFO The Address Book available in the system was printed.
+2025-02-19 17:38:48,028, INFO Removed a contact from Address Book.
+2025-02-19 17:38:49,069, INFO The Address Book available in the system was printed.
+2025-02-19 17:38:50,362, INFO Printed the Contact details successfully.
+2025-02-19 17:38:56,561, INFO Closed the Script!!!!
