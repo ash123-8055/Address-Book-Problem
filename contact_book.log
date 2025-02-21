@@ -357,3 +357,52 @@
 2025-02-21 15:55:35,495, WARNING The user tried adding the contact which was already there and it got overwritten.
 2025-02-21 15:55:35,495, INFO Updated the dictionary successfully.
 2025-02-21 15:56:05,006, INFO Closed the Script!!!!
+2025-02-21 16:15:57,998, INFO Started the Script!!!
+2025-02-21 16:16:08,636, INFO Uploaded a contact into the system
+2025-02-21 16:16:12,618, INFO The user has decided to add 2 contacts
+2025-02-21 16:16:25,679, INFO Updated the dictionary successfully.
+2025-02-21 16:16:40,580, INFO Updated the dictionary successfully.
+2025-02-21 16:16:42,943, INFO Closed the Script!!!!
+2025-02-21 16:17:07,815, INFO Started the Script!!!
+2025-02-21 16:17:19,012, INFO Uploaded a contact into the system
+2025-02-21 16:17:22,196, INFO The user has decided to add 2 contacts
+2025-02-21 16:17:34,025, INFO Updated the dictionary successfully.
+2025-02-21 16:17:49,313, INFO Updated the dictionary successfully.
+2025-02-21 16:17:53,386, INFO Found 3 contacts in city: Chennai
+2025-02-21 16:20:59,343, INFO Closed the Script!!!!
+2025-02-21 16:22:33,773, INFO Started the Script!!!
+2025-02-21 16:22:44,810, INFO Uploaded a contact into the system
+2025-02-21 16:22:47,657, INFO The user has decided to add 2 contacts
+2025-02-21 16:22:57,527, INFO Updated the dictionary successfully.
+2025-02-21 16:23:07,151, INFO Updated the dictionary successfully.
+2025-02-21 16:23:08,058, INFO The Address Book available in the system was printed.
+2025-02-21 16:23:49,353, INFO Printed contact details successfully
+2025-02-21 16:24:14,463, INFO Found 3 contacts in city: Chennai
+2025-02-21 16:25:01,284, INFO Closed the Script!!!!
+2025-02-21 16:25:02,570, INFO Started the Script!!!
+2025-02-21 16:25:12,033, INFO Uploaded a contact into the system
+2025-02-21 16:25:15,761, INFO The user has decided to add 2 contacts
+2025-02-21 16:25:25,631, INFO Updated the dictionary successfully.
+2025-02-21 16:25:36,183, INFO Updated the dictionary successfully.
+2025-02-21 16:25:37,460, INFO The Address Book available in the system was printed.
+2025-02-21 16:25:59,464, INFO Printed contact details successfully
+2025-02-21 16:26:11,382, INFO Found 3 contacts in city: Chennai
+2025-02-21 16:27:11,655, INFO Found 3 contacts in city: Chennai
+2025-02-21 16:27:15,453, INFO Closed the Script!!!!
+2025-02-21 16:27:18,899, INFO Started the Script!!!
+2025-02-21 16:27:28,550, INFO Uploaded a contact into the system
+2025-02-21 16:27:31,365, INFO The user has decided to add 2 contacts
+2025-02-21 16:27:40,343, INFO Updated the dictionary successfully.
+2025-02-21 16:27:49,801, ERROR Value Error: The phone number should only contain number.
+2025-02-21 16:27:54,044, INFO Updated the dictionary successfully.
+2025-02-21 16:27:59,088, INFO Found 3 contacts in city: chennai
+2025-02-21 16:30:08,734, INFO Closed the Script!!!!
+2025-02-21 16:30:10,169, INFO Started the Script!!!
+2025-02-21 16:30:18,886, INFO Uploaded a contact into the system
+2025-02-21 16:30:25,828, INFO The user has decided to add 2 contacts
+2025-02-21 16:30:38,212, INFO Updated the dictionary successfully.
+2025-02-21 16:30:54,364, INFO Updated the dictionary successfully.
+2025-02-21 16:30:55,695, INFO The Address Book available in the system was printed.
+2025-02-21 16:34:12,657, INFO Printed contact details successfully
+2025-02-21 16:34:29,535, INFO Found 3 contacts in city: chennai
+2025-02-21 16:34:39,104, INFO Closed the Script!!!!
