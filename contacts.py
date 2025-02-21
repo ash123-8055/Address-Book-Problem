@@ -80,15 +80,23 @@ class AddressBookMain:
             print("The Address book is empty!!")
             logger.warning("Trying to print a empty Address Book.")
 
-        print()
-        for key,value in self.system_book.items():
-            print(f"\n{key}")
-            for key1,value1 in value.items():
-                print(f"\nName - {key1}")
-                for key2,value2 in value1.items():
-                    print(f"{key2} - {value2}")
-        
-        logger.info("Printed the Contact details successfully.")
+        total_contacts = sum(len(contacts) for contacts in self.system_book.values())
+        print(f"\nTotal Contacts: {total_contacts}")
+        print("-" * 50)
+        for book_name, contacts in self.system_book.items():
+            print(f"\nAddress Book: {book_name}")
+            print("-" * 50)
+            if not contacts:
+                print("No contacts in this address book")
+                continue
+            
+            for full_name, details in contacts.items():
+                print(f"\nName: {full_name}")
+                print("Contact Details:")
+                for field, value in details.items():
+                    print(f"  {field}: {value}")
+            print("-" * 50)
+        logger.info("Printed contact details successfully")
 
     def update_contact(self):
         """
@@ -189,7 +197,7 @@ class AddressBookMain:
         else:
             print("\nThe Address book in the system as follow:\n")
             for key in self.system_book.keys():
-                print(f"{key}")
+                print(f"\nBook Name: {key}")
             logger.info("The Address Book available in the system was printed.")
 
     def dupe_check(self):
@@ -197,7 +205,51 @@ class AddressBookMain:
         if full_name in self.system_book[self.address_book_name]:
             print("The Contact already existed in the system...\nIt is being overwritten!!")
             logger.warning("The user tried adding the contact which was already there and it got overwritten.")
+
+    def search_by_city(self, city):
+        """
+        Description: Searches for all persons in a given city across all address books
     
+        Parameter: self: object
+                   city: name of the city to search for
+    
+        Return: None - prints the search results
+        """
+
+        if not self.system_book:
+            print("The Address Book system is empty!")
+            logger.warning("Attempted to search in empty Address Book system")
+
+        search_city = city.lower()
+        found_contacts = []
+    
+        for book_name, contacts in self.system_book.items():
+            for full_name, details in contacts.items():
+                if details['City'].lower() == search_city:
+                    found_contacts.append({
+                        'name': full_name,
+                        'address_book': book_name,
+                        'details': details
+                    })
+    
+        if found_contacts:
+            print(f"\nFound {len(found_contacts)} person(s) in {city}:")
+            for contact in found_contacts:
+                print()
+                print("-" * 50)
+                print(f"Name: {contact['name']}")
+                print(f"Address Book: {contact['address_book']}")
+                print("Contact Details:")
+                for field, value in contact['details'].items():
+                    print(f"  {field}: {value}")
+            print("-" * 50)
+            logger.info(f"Found {len(found_contacts)} contacts in city: {city}")
+        else:
+            print(f"\nNo persons found in {city}")
+            logger.info(f"No contacts found in city: {city}")
+
+
+
 def main():
     """
     Description: Driver code
@@ -228,7 +280,7 @@ def main():
             logger.error("Error on the phone number.")
         
         contact_one=AddressBookMain(first_name,last_name,address,city,state,zipcode,phone_number,email)
-        print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Exit")
+        print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Find By City\n6. Exit")
         choice=input("\nThe Choice: ")
 
         while True:
@@ -249,6 +301,10 @@ def main():
                     contact_one.delete_contact()
 
                 case "5":
+                    city = input("Enter city name to search: ")
+                    contact_one.search_by_city(city)
+
+                case "6":
                     print("Exiting the program!!!")
                     logger.info("Closed the Script!!!!")
                     break
@@ -256,7 +312,7 @@ def main():
                 case default:
                     print("\nInvalid Input!\nTry the other options available!")
 
-            print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Exit")
+            print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Find By City\n6. Exit")
             choice=input("\nThe Choice: ")
 
     except ValueError as ve:
