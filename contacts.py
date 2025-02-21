@@ -248,7 +248,47 @@ class AddressBookMain:
             print(f"\nNo persons found in {city}")
             logger.info(f"No contacts found in city: {city}")
 
+    def search_by_state(self,state):
+        """
+        Description: Searches for all persons in a given state across all address books
+    
+        Parameter: self: object
+                   state: name of the state to search for
+    
+        Return: None - prints the search results
+        """
 
+        if not self.system_book:
+            print("The Address Book system is empty!")
+            logger.warning("Attempted to search in empty Address Book system")
+
+        search_state = state.lower()
+        found_contacts = []
+    
+        for book_name, contacts in self.system_book.items():
+            for full_name, details in contacts.items():
+                if details['State'].lower() == search_state:
+                    found_contacts.append({
+                        'name': full_name,
+                        'address_book': book_name,
+                        'details': details
+                    })
+    
+        if found_contacts:
+            print(f"\nFound {len(found_contacts)} person(s) in {state}:")
+            for contact in found_contacts:
+                print()
+                print("-" * 50)
+                print(f"Name: {contact['name']}")
+                print(f"Address Book: {contact['address_book']}")
+                print("Contact Details:")
+                for field, value in contact['details'].items():
+                    print(f"  {field}: {value}")
+            print("-" * 50)
+            logger.info(f"Found {len(found_contacts)} contacts in state: {state}")
+        else:
+            print(f"\nNo persons found in {state}")
+            logger.info(f"No contacts found in state: {state}")
 
 def main():
     """
@@ -280,7 +320,7 @@ def main():
             logger.error("Error on the phone number.")
         
         contact_one=AddressBookMain(first_name,last_name,address,city,state,zipcode,phone_number,email)
-        print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Find By City\n6. Exit")
+        print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Find By City\n6. Find by State\n7. Exit")
         choice=input("\nThe Choice: ")
 
         while True:
@@ -305,6 +345,10 @@ def main():
                     contact_one.search_by_city(city)
 
                 case "6":
+                    state = input("Enter city name to search: ")
+                    contact_one.search_by_state(state)
+
+                case "7":
                     print("Exiting the program!!!")
                     logger.info("Closed the Script!!!!")
                     break
@@ -312,7 +356,7 @@ def main():
                 case default:
                     print("\nInvalid Input!\nTry the other options available!")
 
-            print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Find By City\n6. Exit")
+            print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Find By City\n6. Find by State\n7. Exit")
             choice=input("\nThe Choice: ")
 
     except ValueError as ve:
