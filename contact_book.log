@@ -274,3 +274,86 @@
 2025-02-19 17:38:49,069, INFO The Address Book available in the system was printed.
 2025-02-19 17:38:50,362, INFO Printed the Contact details successfully.
 2025-02-19 17:38:56,561, INFO Closed the Script!!!!
+2025-02-20 11:50:21,696, INFO Started the Script!!!
+2025-02-20 11:50:31,889, INFO Uploaded a contact into the system
+2025-02-20 11:50:48,456, INFO The user has decided to add 3 contacts
+2025-02-20 11:50:59,121, INFO Updated the dictionary successfully.
+2025-02-20 11:51:10,363, INFO Updated the dictionary successfully.
+2025-02-20 11:51:25,321, INFO Updated the dictionary successfully.
+2025-02-20 11:51:28,251, INFO Printed the Contact details successfully.
+2025-02-20 11:51:39,938, INFO The Address Book available in the system was printed.
+2025-02-21 15:12:53,470, INFO Started the Script!!!
+2025-02-21 15:13:03,769, INFO Uploaded a contact into the system
+2025-02-21 15:13:10,268, INFO The user has decided to add 3 contacts
+2025-02-21 15:13:22,904, INFO Updated the dictionary successfully.
+2025-02-21 15:13:22,905, ERROR Value Error: name 'system_book' is not defined
+2025-02-21 15:13:40,645, INFO Started the Script!!!
+2025-02-21 15:13:48,600, INFO Uploaded a contact into the system
+2025-02-21 15:14:01,317, INFO The user has decided to add 3 contacts
+2025-02-21 15:14:11,949, INFO Updated the dictionary successfully.
+2025-02-21 15:14:11,949, ERROR Value Error: name 'system_book' is not defined
+2025-02-21 15:24:36,150, INFO Started the Script!!!
+2025-02-21 15:24:44,430, INFO Uploaded a contact into the system
+2025-02-21 15:25:06,643, INFO The user has decided to add 3 contacts
+2025-02-21 15:25:16,663, INFO Updated the dictionary successfully.
+2025-02-21 15:25:16,663, ERROR Value Error: name 'system_book' is not defined
+2025-02-21 15:38:04,924, INFO Started the Script!!!
+2025-02-21 15:38:12,092, INFO Uploaded a contact into the system
+2025-02-21 15:38:17,593, INFO The user has decided to add 2 contacts
+2025-02-21 15:38:24,956, INFO Updated the dictionary successfully.
+2025-02-21 15:38:24,957, ERROR Value Error: name 'system_book' is not defined
+2025-02-21 15:40:45,741, INFO Started the Script!!!
+2025-02-21 15:40:56,972, INFO Uploaded a contact into the system
+2025-02-21 15:40:59,006, INFO The user has decided to add 1 contacts
+2025-02-21 15:41:05,959, INFO Updated the dictionary successfully.
+2025-02-21 15:41:05,960, ERROR Value Error: name 'system_book' is not defined
+2025-02-21 15:43:07,051, INFO Started the Script!!!
+2025-02-21 15:43:13,592, INFO Uploaded a contact into the system
+2025-02-21 15:43:17,223, INFO The user has decided to add 1 contacts
+2025-02-21 15:43:24,566, INFO Updated the dictionary successfully.
+2025-02-21 15:43:24,567, ERROR Value Error: name 'system_book' is not defined
+2025-02-21 15:43:49,779, INFO Started the Script!!!
+2025-02-21 15:43:56,135, INFO Uploaded a contact into the system
+2025-02-21 15:43:58,027, INFO The user has decided to add 1 contacts
+2025-02-21 15:44:07,001, INFO Updated the dictionary successfully.
+2025-02-21 15:44:07,002, ERROR Value Error: name 'system_book' is not defined
+2025-02-21 15:44:54,257, INFO Started the Script!!!
+2025-02-21 15:45:00,640, INFO Uploaded a contact into the system
+2025-02-21 15:45:02,887, INFO The user has decided to add 1 contacts
+2025-02-21 15:45:09,617, INFO Updated the dictionary successfully.
+2025-02-21 15:45:09,618, WARNING The user tried adding the contact which was already there and it got overwritten.
+2025-02-21 15:49:11,972, INFO Closed the Script!!!!
+2025-02-21 15:49:13,864, INFO Started the Script!!!
+2025-02-21 15:49:19,572, INFO Uploaded a contact into the system
+2025-02-21 15:49:22,351, INFO The user has decided to add 1 contacts
+2025-02-21 15:49:30,677, INFO Updated the dictionary successfully.
+2025-02-21 15:49:30,678, WARNING The user tried adding the contact which was already there and it got overwritten.
+2025-02-21 15:50:39,137, INFO Closed the Script!!!!
+2025-02-21 15:50:40,698, INFO Started the Script!!!
+2025-02-21 15:50:49,798, INFO Uploaded a contact into the system
+2025-02-21 15:50:51,891, INFO The user has decided to add 1 contacts
+2025-02-21 15:51:00,402, INFO Updated the dictionary successfully.
+2025-02-21 15:51:00,404, WARNING The user tried adding the contact which was already there and it got overwritten.
+2025-02-21 15:52:29,961, INFO Closed the Script!!!!
+2025-02-21 15:52:31,230, INFO Started the Script!!!
+2025-02-21 15:52:39,159, INFO Uploaded a contact into the system
+2025-02-21 15:52:40,879, INFO The user has decided to add 1 contacts
+2025-02-21 15:52:49,626, ERROR Value Error: name 'dupe_check' is not defined
+2025-02-21 15:53:02,149, INFO Started the Script!!!
+2025-02-21 15:53:10,418, INFO Uploaded a contact into the system
+2025-02-21 15:53:11,867, INFO The user has decided to add 1 contacts
+2025-02-21 15:53:19,705, INFO Updated the dictionary successfully.
+2025-02-21 15:53:42,039, INFO Closed the Script!!!!
+2025-02-21 15:53:43,944, INFO Started the Script!!!
+2025-02-21 15:53:53,166, INFO Uploaded a contact into the system
+2025-02-21 15:53:54,674, INFO The user has decided to add 1 contacts
+2025-02-21 15:54:07,843, INFO Updated the dictionary successfully.
+2025-02-21 15:54:26,068, INFO The Address Book available in the system was printed.
+2025-02-21 15:54:29,181, INFO Printed the Contact details successfully.
+2025-02-21 15:55:04,690, INFO The user has decided to add 1 contacts
+2025-02-21 15:55:11,733, ERROR Value Error: The phone number should only contain number.
+2025-02-21 15:55:14,872, INFO Updated the dictionary successfully.
+2025-02-21 15:55:25,528, INFO The user has decided to add 1 contacts
+2025-02-21 15:55:35,495, WARNING The user tried adding the contact which was already there and it got overwritten.
+2025-02-21 15:55:35,495, INFO Updated the dictionary successfully.
+2025-02-21 15:56:05,006, INFO Closed the Script!!!!
