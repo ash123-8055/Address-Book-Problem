@@ -409,3 +409,11 @@
 2025-02-21 16:40:20,097, INFO Started the Script!!!
 2025-02-21 16:40:32,058, INFO Uploaded a contact into the system
 2025-02-21 16:40:36,319, INFO Closed the Script!!!!
+2025-02-21 16:55:41,359, INFO Started the Script!!!
+2025-02-21 16:55:52,967, INFO Uploaded a contact into the system
+2025-02-21 16:55:58,239, INFO The user has decided to add 2 contacts
+2025-02-21 16:56:12,542, INFO Updated the dictionary successfully.
+2025-02-21 16:56:22,139, INFO Updated the dictionary successfully.
+2025-02-21 16:56:57,758, INFO Found 1 contacts in city: asd
+2025-02-21 16:57:04,211, INFO Found 3 contacts in state: TN
+2025-02-21 16:57:13,353, INFO Closed the Script!!!!
