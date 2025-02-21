@@ -133,6 +133,7 @@ class AddressBookMain:
         if self.address_book_name not in self.system_book:
             self.system_book[self.address_book_name] = {}
 
+        self.dupe_check()
         self.system_book[self.address_book_name].update(self.address_book)
         self.address_book={}
         logger.info("Updated the dictionary successfully.")
@@ -191,6 +192,12 @@ class AddressBookMain:
                 print(f"{key}")
             logger.info("The Address Book available in the system was printed.")
 
+    def dupe_check(self):
+        full_name=self.first_name+" "+self.last_name
+        if full_name in self.system_book[self.address_book_name]:
+            print("The Contact already existed in the system...\nIt is being overwritten!!")
+            logger.warning("The user tried adding the contact which was already there and it got overwritten.")
+    
 def main():
     """
     Description: Driver code
@@ -263,3 +270,29 @@ def main():
 
 if __name__=="__main__":
     main()
+
+
+
+"""
+
+system_book={'Book1': {
+    'Ashwin Kumar': {'Address': 'asdasd', 'City': 'asdas', 'State': 'sadas', 'Zipcode': '21312', 'Phone Number': '123123', 'Email': 'asdasda'}, 
+    'Ash Kuma': {'Address': 'asdasd', 'City': 'adasd', 'State': 'sadasd', 'Zipcode': '123123', 'Phone Number': '213123', 'Email': 'asfdasfas'}
+    }, 
+    'Book2': {
+    'Ash k': {'Address': 'adsasd', 'City': 'asdas', 'State': 'sadasd', 'Zipcode': '21312', 'Phone Number': '231321', 'Email': 'sadsad'}
+    }, 
+    'Book3': {
+    'Ash kum': {'Address': 'adsad', 'City': 'sadasd', 'State': 'asdasd', 'Zipcode': '321', 'Phone Number': '12312', 'Email': 'asdasd'}
+    }
+    }
+for key,value in d1.items():
+    # print(key,value)    #Key- Book Name.... Value- Contact Book
+    # print()
+    for key1,value1 in value.items():
+        # print(key1,value1)    #Key- Full_name... Value- Contact_details
+        # print()
+        for key2,value2 in value1.items():
+            print(key2,value2)   #Key2- Address, City, state.blehbleh value2- The details
+            
+"""
