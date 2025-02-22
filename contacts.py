@@ -201,31 +201,79 @@ class AddressBookMain:
             logger.info("The Address Book available in the system was printed.")
 
     def dupe_check(self):
+        """
+        Description: This function checks the Duplicate value and displays the message.
+
+        Paramater: self: object
+
+        Return: None
+        """
+
         full_name=self.first_name+" "+self.last_name
         if full_name in self.system_book[self.address_book_name]:
             print("The Contact already existed in the system...\nIt is being overwritten!!")
             logger.warning("The user tried adding the contact which was already there and it got overwritten.")
-
-    def search_by_city(self, city):
+    
+    def count_by_location(self):
         """
-        Description: Searches for all persons in a given city across all address books
+        Description: Counts number of contacts by city and state across all address books
     
         Parameter: self: object
-                   city: name of the city to search for
     
-        Return: None - prints the search results
+        Return: None - prints the count statistics
+        """
+
+        if not self.system_book:
+            print("The Address Book system is empty!")
+            logger.warning("Attempted to count contacts in empty Address Book system")
+
+        city_count = {}
+        state_count = {}
+        for book_name, contacts in self.system_book.items():
+            for full_name, details in contacts.items():
+                city = details['City']
+                city_count[city] = city_count.get(city, 0) + 1
+                state = details['State']
+                state_count[state] = state_count.get(state, 0) + 1
+    
+        total_contacts = sum(city_count.values())
+        print("\nContact Count Statistics")
+        print("-" * 50)
+        print(f"\nTotal Contacts: {total_contacts}")
+        print("\nCount by City:")
+        print("-" * 50)
+        for city, count in sorted(city_count.items()):
+            percentage = (count / total_contacts) * 100
+            print(f"{city}: {count} contacts ({percentage:.1f}%)")
+    
+        print("\nCount by State:")
+        print("-" * 50)
+        for state, count in sorted(state_count.items()):
+            percentage = (count / total_contacts) * 100
+            print(f"{state}: {count} contacts ({percentage:.1f}%)")
+    
+        logger.info("Generated contact count statistics by city and state")
+
+    def show_contacts_in_location(self, location_type, location_name):
+        """
+        Description: Shows all contacts in a specific city or state
+    
+        Parameter: self: object
+                   location_type: 'City' or 'State'
+                   location_name: name of the city or state to search for
+        
+        Return: None - prints the contact details
         """
 
         if not self.system_book:
             print("The Address Book system is empty!")
             logger.warning("Attempted to search in empty Address Book system")
 
-        search_city = city.lower()
+        location_name = location_name.lower()
         found_contacts = []
-    
         for book_name, contacts in self.system_book.items():
             for full_name, details in contacts.items():
-                if details['City'].lower() == search_city:
+                if details[location_type].lower() == location_name:
                     found_contacts.append({
                         'name': full_name,
                         'address_book': book_name,
@@ -233,62 +281,18 @@ class AddressBookMain:
                     })
     
         if found_contacts:
-            print(f"\nFound {len(found_contacts)} person(s) in {city}:")
+            print(f"\nDetails of contacts in {location_type} '{location_name.title()}':")
+            print("-" * 50)
+            print(f"Total contacts found: {len(found_contacts)}")
             for contact in found_contacts:
-                print()
-                print("-" * 50)
-                print(f"Name: {contact['name']}")
+                print(f"\nName: {contact['name']}")
                 print(f"Address Book: {contact['address_book']}")
                 print("Contact Details:")
                 for field, value in contact['details'].items():
                     print(f"  {field}: {value}")
-            print("-" * 50)
-            logger.info(f"Found {len(found_contacts)} contacts in city: {city}")
+                print("-" * 30)
         else:
-            print(f"\nNo persons found in {city}")
-            logger.info(f"No contacts found in city: {city}")
-
-    def search_by_state(self,state):
-        """
-        Description: Searches for all persons in a given state across all address books
-    
-        Parameter: self: object
-                   state: name of the state to search for
-    
-        Return: None - prints the search results
-        """
-
-        if not self.system_book:
-            print("The Address Book system is empty!")
-            logger.warning("Attempted to search in empty Address Book system")
-
-        search_state = state.lower()
-        found_contacts = []
-    
-        for book_name, contacts in self.system_book.items():
-            for full_name, details in contacts.items():
-                if details['State'].lower() == search_state:
-                    found_contacts.append({
-                        'name': full_name,
-                        'address_book': book_name,
-                        'details': details
-                    })
-    
-        if found_contacts:
-            print(f"\nFound {len(found_contacts)} person(s) in {state}:")
-            for contact in found_contacts:
-                print()
-                print("-" * 50)
-                print(f"Name: {contact['name']}")
-                print(f"Address Book: {contact['address_book']}")
-                print("Contact Details:")
-                for field, value in contact['details'].items():
-                    print(f"  {field}: {value}")
-            print("-" * 50)
-            logger.info(f"Found {len(found_contacts)} contacts in state: {state}")
-        else:
-            print(f"\nNo persons found in {state}")
-            logger.info(f"No contacts found in state: {state}")
+            print(f"\nNo contacts found in {location_type} '{location_name.title()}'")
 
 def main():
     """
@@ -320,7 +324,7 @@ def main():
             logger.error("Error on the phone number.")
         
         contact_one=AddressBookMain(first_name,last_name,address,city,state,zipcode,phone_number,email)
-        print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Find By City\n6. Find by State\n7. Exit")
+        print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Exit")
         choice=input("\nThe Choice: ")
 
         while True:
@@ -341,12 +345,20 @@ def main():
                     contact_one.delete_contact()
 
                 case "5":
-                    city = input("Enter city name to search: ")
-                    contact_one.search_by_city(city)
+                    contact_one.count_by_location()
 
                 case "6":
-                    state = input("Enter city name to search: ")
-                    contact_one.search_by_state(state)
+                    print("\nSearch by:")
+                    print("1. City")
+                    print("2. State")
+                    search_type = input("Enter choice (1/2): ")
+                    location = input("Enter name: ")
+                    if search_type == "1":
+                        contact_one.show_contacts_in_location("City", location)
+                    elif search_type == "2":
+                        contact_one.show_contacts_in_location("State", location)
+                    else:
+                        print("Invalid choice!")
 
                 case "7":
                     print("Exiting the program!!!")
@@ -356,7 +368,7 @@ def main():
                 case default:
                     print("\nInvalid Input!\nTry the other options available!")
 
-            print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Find By City\n6. Find by State\n7. Exit")
+            print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Exit")
             choice=input("\nThe Choice: ")
 
     except ValueError as ve:
