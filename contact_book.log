@@ -417,3 +417,14 @@
 2025-02-21 16:56:57,758, INFO Found 1 contacts in city: asd
 2025-02-21 16:57:04,211, INFO Found 3 contacts in state: TN
 2025-02-21 16:57:13,353, INFO Closed the Script!!!!
+2025-02-22 11:41:50,655, INFO Started the Script!!!
+2025-02-22 11:42:03,387, INFO Uploaded a contact into the system
+2025-02-22 11:42:09,241, INFO The user has decided to add 4 contacts
+2025-02-22 11:42:22,842, INFO Updated the dictionary successfully.
+2025-02-22 11:42:38,727, INFO Updated the dictionary successfully.
+2025-02-22 11:42:58,814, INFO Updated the dictionary successfully.
+2025-02-22 11:43:13,797, INFO Updated the dictionary successfully.
+2025-02-22 11:43:15,204, INFO The Address Book available in the system was printed.
+2025-02-22 11:43:18,543, INFO Printed contact details successfully
+2025-02-22 11:43:57,997, INFO Generated contact count statistics by city and state
+2025-02-22 11:45:06,276, INFO Closed the Script!!!!
