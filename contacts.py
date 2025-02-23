@@ -337,6 +337,84 @@ class AddressBookMain:
         print("Sorted the Contacts as per City Name.")
         logger.info("Sorted contacts by city in all address books")
 
+    def save_to_file(self):
+        """
+        Description: Saves all address books to a text file
+    
+        Parameter: self: object
+    
+        Return: None
+        """
+
+        try:
+            with open("address_book_data.txt", "w") as file:
+                for book_name, contacts in self.system_book.items():
+                    file.write(f"Address Book: {book_name}\n")
+                    file.write("-" * 50 + "\n")
+                
+                    for full_name, details in contacts.items():
+                        file.write(f"Name: {full_name}\n")
+                        for field, value in details.items():
+                            file.write(f"{field}: {value}\n")
+                        file.write("-" * 50 + "\n")
+                
+                    file.write("\n")
+                
+            print("Successfully saved all data to file!")
+            logger.info("Saved address book data to file")
+        
+        except Exception as e:
+            print(f"Error saving to file: {e}")
+            logger.error(f"Error saving to file: {e}")
+
+    def load_from_file(self):
+        """
+        Description: Loads address books from text file
+    
+        Parameter: self: object
+    
+        Return: None
+        """
+
+        try:
+            print("If any data was present on the current run will be overwritten!")
+            self.system_book = {}
+            current_book = None
+            current_name = None
+            current_details = {}
+        
+            with open("address_book_data.txt", "r") as file:
+                for line in file:
+                    line = line.strip()
+                
+                    if line.startswith("Address Book: "):
+                        current_book = line.replace("Address Book: ", "")
+                        self.system_book[current_book] = {}
+                    
+                    elif line.startswith("Name: "):
+                        if current_name and current_book:
+                            self.system_book[current_book][current_name] = current_details
+                            current_details = {}
+                        current_name = line.replace("Name: ", "")
+                    
+                    elif ":" in line and not line.startswith("-"):
+                        key, value = line.split(": ", 1)
+                        current_details[key] = value
+                    
+                if current_name and current_book:
+                    self.system_book[current_book][current_name] = current_details
+                
+            print("Successfully loaded data from file!")
+            logger.info("Loaded address book data from file")
+        
+        except FileNotFoundError:
+            print("No saved data file found.")
+            logger.warning("No saved data file found")
+        
+        except Exception as e:
+            print(f"Error loading from file: {e}")
+            logger.error(f"Error loading from file: {e}")
+
 def main():
     """
     Description: Driver code
@@ -367,7 +445,7 @@ def main():
             logger.error("Error on the phone number.")
         
         contact_one=AddressBookMain(first_name,last_name,address,city,state,zipcode,phone_number,email)
-        print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Sort by City.\n8. Exit")
+        print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Sort by City.\n8. Read and Write on .txt\n9. Exit")
         choice=input("\nThe Choice: ")
 
         while True:
@@ -407,6 +485,16 @@ def main():
                     contact_one.sort_by_city()
 
                 case "8":
+                    print("Working on .txt")
+                    choice=input("\n1. Write\n2. Read")
+                    if choice == "1":
+                        contact_one.save_to_file()
+                    elif choice == "2":
+                        contact_one.load_from_file()
+                    else:
+                        print("Invalid Choice!")
+
+                case "9":
                     print("Exiting the program!!!")
                     logger.info("Closed the Script!!!!")
                     break
@@ -414,7 +502,7 @@ def main():
                 case default:
                     print("\nInvalid Input!\nTry the other options available!")
 
-            print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Sort by City.\n8. Exit")
+            print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Sort by City.\n8. Read and Write on .txt\n9. Exit")
             choice=input("\nThe Choice: ")
 
     except ValueError as ve:
