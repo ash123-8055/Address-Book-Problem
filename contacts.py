@@ -144,6 +144,7 @@ class AddressBookMain:
         self.dupe_check()
         self.system_book[self.address_book_name].update(self.address_book)
         self.address_book={}
+        self.sort_contacts()
         logger.info("Updated the dictionary successfully.")
         print("Updated the Dictionary!!\n")
 
@@ -293,6 +294,24 @@ class AddressBookMain:
                 print("-" * 30)
         else:
             print(f"\nNo contacts found in {location_type} '{location_name.title()}'")
+
+    def sort_contacts(self):
+        """
+        Description: Sorts contacts alphabetically by person's name in each address book
+    
+        Parameter: self: object
+    
+        Return: None - sorts the contacts in place
+        """
+        
+        if not self.system_book:
+            logger.warning("Attempted to sort empty Address Book system")
+        
+        for book_name, contacts in self.system_book.items():
+            sorted_contacts = dict(sorted(contacts.items()))
+            self.system_book[book_name] = sorted_contacts
+
+        logger.info("Sorted contacts alphabetically in all address books")
 
 def main():
     """
