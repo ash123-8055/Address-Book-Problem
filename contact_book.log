@@ -428,3 +428,21 @@
 2025-02-22 11:43:18,543, INFO Printed contact details successfully
 2025-02-22 11:43:57,997, INFO Generated contact count statistics by city and state
 2025-02-22 11:45:06,276, INFO Closed the Script!!!!
+2025-02-23 20:46:42,810, INFO Started the Script!!!
+2025-02-23 20:46:57,551, INFO Uploaded a contact into the system
+2025-02-23 20:47:03,083, INFO The user has decided to add 3 contacts
+2025-02-23 20:47:21,777, INFO Sorted contacts alphabetically in all address books
+2025-02-23 20:47:21,777, INFO Updated the dictionary successfully.
+2025-02-23 20:47:39,533, INFO Sorted contacts alphabetically in all address books
+2025-02-23 20:47:39,533, INFO Updated the dictionary successfully.
+2025-02-23 20:47:58,717, INFO Sorted contacts alphabetically in all address books
+2025-02-23 20:47:58,717, INFO Updated the dictionary successfully.
+2025-02-23 20:48:00,725, INFO The Address Book available in the system was printed.
+2025-02-23 20:48:03,633, INFO Printed contact details successfully
+2025-02-23 20:48:23,902, INFO The user has decided to add 1 contacts
+2025-02-23 20:48:41,125, INFO Sorted contacts alphabetically in all address books
+2025-02-23 20:48:41,125, INFO Updated the dictionary successfully.
+2025-02-23 20:48:41,860, INFO The Address Book available in the system was printed.
+2025-02-23 20:48:52,084, INFO Printed contact details successfully
+2025-02-23 20:50:06,794, INFO Generated contact count statistics by city and state
+2025-02-23 20:51:25,115, INFO Closed the Script!!!!
