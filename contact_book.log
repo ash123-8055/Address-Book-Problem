@@ -529,3 +529,32 @@
 2025-02-23 22:17:17,886, INFO The Address Book available in the system was printed.
 2025-02-23 22:17:20,208, INFO Printed contact details successfully
 2025-02-23 22:17:27,211, INFO Closed the Script!!!!
+2025-02-23 22:28:06,758, INFO Started the Script!!!
+2025-02-23 22:28:14,127, INFO Uploaded a contact into the system
+2025-02-23 22:28:34,659, INFO Closed the Script!!!!
+2025-02-23 22:29:14,806, INFO Started the Script!!!
+2025-02-23 22:29:20,344, INFO Uploaded a contact into the system
+2025-02-23 22:30:16,572, INFO Closed the Script!!!!
+2025-02-23 22:30:27,815, INFO Started the Script!!!
+2025-02-23 22:30:33,646, INFO Uploaded a contact into the system
+2025-02-23 22:30:39,471, INFO Loaded address book data from file
+2025-02-23 22:30:44,395, INFO Printed contact details successfully
+2025-02-23 22:30:49,323, INFO Closed the Script!!!!
+2025-02-23 22:32:00,699, INFO Started the Script!!!
+2025-02-23 22:32:07,513, INFO Uploaded a contact into the system
+2025-02-23 22:32:10,979, INFO Loaded address book data from file
+2025-02-23 22:32:13,537, INFO Printed contact details successfully
+2025-02-23 22:32:25,759, INFO Saved address book data to CSV file
+2025-02-23 22:32:51,331, INFO Closed the Script!!!!
+2025-02-23 22:32:52,340, INFO Started the Script!!!
+2025-02-23 22:32:58,273, INFO Uploaded a contact into the system
+2025-02-23 22:33:01,044, INFO Printed contact details successfully
+2025-02-23 22:33:31,724, INFO Loaded address book data from CSV file
+2025-02-23 22:33:34,500, INFO Printed contact details successfully
+2025-02-23 22:33:40,907, INFO Closed the Script!!!!
+2025-02-23 22:50:08,447, INFO Started the Script!!!
+2025-02-23 22:50:13,735, INFO Uploaded a contact into the system
+2025-02-23 22:50:17,286, INFO Loaded address book data from CSV file
+2025-02-23 22:50:19,971, INFO The Address Book available in the system was printed.
+2025-02-23 22:50:21,979, INFO Printed contact details successfully
+2025-02-23 22:50:27,169, INFO Closed the Script!!!!
