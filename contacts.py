@@ -313,6 +313,30 @@ class AddressBookMain:
 
         logger.info("Sorted contacts alphabetically in all address books")
 
+    def sort_by_city(self):
+        """
+        Description: Sorts contacts by city in each address book
+    
+        Parameter: self: object
+    
+        Return: None - sorts the contacts in place
+        """
+        
+        if not self.system_book:
+            logger.warning("Attempted to sort empty Address Book system")
+
+        for book_name, contacts in self.system_book.items():
+            sorted_contacts = dict(
+                sorted(
+                    contacts.items(),
+                    key=lambda x: x[1]['City'].lower() 
+                )
+            )
+            self.system_book[book_name] = sorted_contacts
+
+        print("Sorted the Contacts as per City Name.")
+        logger.info("Sorted contacts by city in all address books")
+
 def main():
     """
     Description: Driver code
@@ -343,7 +367,7 @@ def main():
             logger.error("Error on the phone number.")
         
         contact_one=AddressBookMain(first_name,last_name,address,city,state,zipcode,phone_number,email)
-        print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Exit")
+        print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Sort by City.\n8. Exit")
         choice=input("\nThe Choice: ")
 
         while True:
@@ -380,6 +404,9 @@ def main():
                         print("Invalid choice!")
 
                 case "7":
+                    contact_one.sort_by_city()
+
+                case "8":
                     print("Exiting the program!!!")
                     logger.info("Closed the Script!!!!")
                     break
@@ -387,7 +414,7 @@ def main():
                 case default:
                     print("\nInvalid Input!\nTry the other options available!")
 
-            print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Exit")
+            print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Sort by City.\n8. Exit")
             choice=input("\nThe Choice: ")
 
     except ValueError as ve:
