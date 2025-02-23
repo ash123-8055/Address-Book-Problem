@@ -415,6 +415,99 @@ class AddressBookMain:
             print(f"Error loading from file: {e}")
             logger.error(f"Error loading from file: {e}")
 
+    def save_to_csv(self):
+        """
+        Description: Saves all address books to a CSV file
+    
+        Parameter: self: object
+    
+        Return: None
+        """
+
+        try:
+            with open("address_book_data.csv", "w", newline='') as file:
+                header = ["Address Book", "Full Name", "Address", "City", "State", "Zipcode", "Phone Number", "Email"]
+                file.write(",".join(header) + "\n")
+            
+            # Write data
+                for book_name, contacts in self.system_book.items():
+                    for full_name, details in contacts.items():
+                        row = [
+                            book_name,
+                            full_name,
+                            details["Address"],
+                            details["City"],
+                            details["State"],
+                            details["Zipcode"],
+                            details["Phone Number"],
+                            details["Email"]
+                        ]
+                        # Escape commas in fields by wrapping in quotes
+                        row = [f'"{field}"' if "," in str(field) else str(field) for field in row]
+                        file.write(",".join(row) + "\n")
+                    
+            print("Successfully saved all data to CSV file!")
+            logger.info("Saved address book data to CSV file")
+        
+        except Exception as e:
+            print(f"Error saving to CSV file: {e}")
+            logger.error(f"Error saving to CSV file: {e}")
+
+    def load_from_csv(self):
+        """
+        Description: Loads address books from CSV file
+    
+        Parameter: self: object
+    
+        Return: None
+        """
+
+        try:
+            print("If any data was present on the current run will be overwritten!")
+            self.system_book = {}
+            with open("address_book_data.csv", "r") as file:
+                header = file.readline()
+                for line in file:
+                    fields = []
+                    current_field = []
+                    in_quotes = False
+                    for char in line:
+                        if char == '"':
+                            in_quotes = not in_quotes
+                        elif char == ',' and not in_quotes:
+                            fields.append(''.join(current_field).strip('"'))
+                            current_field = []
+                        else:
+                            current_field.append(char)
+                
+                    fields.append(''.join(current_field).strip().strip('"'))
+                    book_name = fields[0]
+                    full_name = fields[1]
+                    contact_details = {
+                        "Address": fields[2],
+                        "City": fields[3],
+                        "State": fields[4],
+                        "Zipcode": fields[5],
+                        "Phone Number": fields[6],
+                        "Email": fields[7].strip()
+                    }
+                
+                    if book_name not in self.system_book:
+                        self.system_book[book_name] = {}
+                
+                    self.system_book[book_name][full_name] = contact_details
+                
+            print("Successfully loaded data from CSV file!")
+            logger.info("Loaded address book data from CSV file")
+        
+        except FileNotFoundError:
+            print("No saved CSV file found.")
+            logger.warning("No saved CSV file found")
+        
+        except Exception as e:
+            print(f"Error loading from CSV file: {e}")
+            logger.error(f"Error loading from CSV file: {e}")
+
 def main():
     """
     Description: Driver code
@@ -445,7 +538,7 @@ def main():
             logger.error("Error on the phone number.")
         
         contact_one=AddressBookMain(first_name,last_name,address,city,state,zipcode,phone_number,email)
-        print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Sort by City.\n8. Read and Write on .txt\n9. Exit")
+        print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Sort by City.\n8. Read and Write on .txt\n9. Read and Write on .csv.\n10. Exit.")
         choice=input("\nThe Choice: ")
 
         while True:
@@ -486,7 +579,8 @@ def main():
 
                 case "8":
                     print("Working on .txt")
-                    choice=input("\n1. Write\n2. Read")
+                    print("\n1. Write\n2. Read")
+                    choice=input("The Choice: ")
                     if choice == "1":
                         contact_one.save_to_file()
                     elif choice == "2":
@@ -495,6 +589,17 @@ def main():
                         print("Invalid Choice!")
 
                 case "9":
+                    print("Working on .csv")
+                    print("\n1. Write\n2. Read")
+                    choice=input("The Choice: ")
+                    if choice == "1":
+                        contact_one.save_to_csv()
+                    elif choice == "2":
+                        contact_one.load_from_csv()
+                    else:
+                        print("Invalid Choice!")
+
+                case "10":
                     print("Exiting the program!!!")
                     logger.info("Closed the Script!!!!")
                     break
@@ -502,7 +607,7 @@ def main():
                 case default:
                     print("\nInvalid Input!\nTry the other options available!")
 
-            print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Sort by City.\n8. Read and Write on .txt\n9. Exit")
+            print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Sort by City.\n8. Read and Write on .txt\n9. Read and Write on .csv.\n10. Exit.")
             choice=input("\nThe Choice: ")
 
     except ValueError as ve:
