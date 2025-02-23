@@ -495,3 +495,37 @@
 2025-02-23 21:15:28,509, INFO The Address Book available in the system was printed.
 2025-02-23 21:15:32,749, INFO Printed contact details successfully
 2025-02-23 21:15:38,238, INFO Closed the Script!!!!
+2025-02-23 22:07:18,275, INFO Started the Script!!!
+2025-02-23 22:07:55,300, INFO Uploaded a contact into the system
+2025-02-23 22:08:01,729, INFO The user has decided to add 3 contacts
+2025-02-23 22:08:38,304, INFO Sorted contacts alphabetically in all address books
+2025-02-23 22:08:38,305, INFO Updated the dictionary successfully.
+2025-02-23 22:09:31,987, INFO Sorted contacts alphabetically in all address books
+2025-02-23 22:09:31,988, INFO Updated the dictionary successfully.
+2025-02-23 22:10:12,726, INFO Sorted contacts alphabetically in all address books
+2025-02-23 22:10:12,726, INFO Updated the dictionary successfully.
+2025-02-23 22:10:14,012, INFO The Address Book available in the system was printed.
+2025-02-23 22:10:15,816, INFO Printed contact details successfully
+2025-02-23 22:10:25,104, INFO Generated contact count statistics by city and state
+2025-02-23 22:10:43,986, ERROR Value Error: 'AddressBookMain' object has no attribute 'write'
+2025-02-23 22:11:28,171, INFO Started the Script!!!
+2025-02-23 22:11:47,158, INFO Uploaded a contact into the system
+2025-02-23 22:11:49,740, INFO The user has decided to add 3 contacts
+2025-02-23 22:12:17,710, INFO Sorted contacts alphabetically in all address books
+2025-02-23 22:12:17,711, INFO Updated the dictionary successfully.
+2025-02-23 22:12:45,402, INFO Sorted contacts alphabetically in all address books
+2025-02-23 22:12:45,402, INFO Updated the dictionary successfully.
+2025-02-23 22:13:13,363, INFO Sorted contacts alphabetically in all address books
+2025-02-23 22:13:13,364, INFO Updated the dictionary successfully.
+2025-02-23 22:13:14,111, INFO The Address Book available in the system was printed.
+2025-02-23 22:13:16,600, INFO Printed contact details successfully
+2025-02-23 22:13:26,210, INFO Saved address book data to file
+2025-02-23 22:13:52,451, INFO Closed the Script!!!!
+2025-02-23 22:16:56,494, INFO Started the Script!!!
+2025-02-23 22:17:03,087, ERROR Value Error: The zipcode should only contain numbers.
+2025-02-23 22:17:05,897, INFO Started the Script!!!
+2025-02-23 22:17:12,830, INFO Uploaded a contact into the system
+2025-02-23 22:17:16,464, INFO Loaded address book data from file
+2025-02-23 22:17:17,886, INFO The Address Book available in the system was printed.
+2025-02-23 22:17:20,208, INFO Printed contact details successfully
+2025-02-23 22:17:27,211, INFO Closed the Script!!!!
