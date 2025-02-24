@@ -1,0 +1,38 @@
+{
+    "Book1": {
+        "Ashwin Kumar": {
+            "Address": "1st street",
+            "City": "Chennai",
+            "State": "TN",
+            "Zipcode": "12345",
+            "Phone Number": "12312389123",
+            "Email": "A@gmail.com"
+        },
+        "Kum La": {
+            "Address": "h street",
+            "City": "Delhi",
+            "State": "New Delhi",
+            "Zipcode": "12312",
+            "Phone Number": "123123123",
+            "Email": "G@gmail.com"
+        }
+    },
+    "Book2": {
+        "Po Lo": {
+            "Address": "main street",
+            "City": "Kolkata",
+            "State": "West Bengal",
+            "Zipcode": "12312",
+            "Phone Number": "21312312",
+            "Email": "gh@gmail.com"
+        },
+        "Ash K": {
+            "Address": "s street",
+            "City": "Mumbai",
+            "State": "Maharastra",
+            "Zipcode": "123123",
+            "Phone Number": "12312312312",
+            "Email": "D@gmail.com"
+        }
+    }
+}
