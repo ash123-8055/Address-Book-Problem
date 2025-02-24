@@ -1,4 +1,5 @@
 from logging_config import logger
+import json
 
 
 class AddressBookMain:
@@ -429,7 +430,6 @@ class AddressBookMain:
                 header = ["Address Book", "Full Name", "Address", "City", "State", "Zipcode", "Phone Number", "Email"]
                 file.write(",".join(header) + "\n")
             
-            # Write data
                 for book_name, contacts in self.system_book.items():
                     for full_name, details in contacts.items():
                         row = [
@@ -508,6 +508,52 @@ class AddressBookMain:
             print(f"Error loading from CSV file: {e}")
             logger.error(f"Error loading from CSV file: {e}")
 
+    def save_to_json(self):
+        """
+        Description: Saves all address books to a JSON file
+    
+        Parameter: self: object
+    
+        Return: None
+        """
+
+        try:
+            with open("address_book_data.json", "w") as file:
+                json.dump(self.system_book, file, indent=4)
+            print("Successfully saved all data to JSON file!")
+            logger.info("Saved address book data to JSON file")
+        
+        except Exception as e:
+            print(f"Error saving to JSON file: {e}")
+            logger.error(f"Error saving to JSON file: {e}")
+
+    def load_from_json(self):
+        """
+        Description: Loads address books from JSON file
+    
+        Parameter: self: object
+    
+        Return: None
+        """
+
+        try:
+            with open("address_book_data.json", "r") as file:
+                self.system_book = json.load(file)
+            print("Successfully loaded data from JSON file!")
+            logger.info("Loaded address book data from JSON file")
+        
+        except FileNotFoundError:
+            print("No saved JSON file found.")
+            logger.warning("No saved JSON file found")
+        
+        except json.JSONDecodeError as e:
+            print(f"Error decoding JSON file: {e}")
+            logger.error(f"JSON decode error: {e}")
+        
+        except Exception as e:
+            print(f"Error loading from JSON file: {e}")
+            logger.error(f"Error loading from JSON file: {e}")
+
 def main():
     """
     Description: Driver code
@@ -538,7 +584,7 @@ def main():
             logger.error("Error on the phone number.")
         
         contact_one=AddressBookMain(first_name,last_name,address,city,state,zipcode,phone_number,email)
-        print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Sort by City.\n8. Read and Write on .txt\n9. Read and Write on .csv.\n10. Exit.")
+        print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Sort by City.\n8. Read and Write on .txt\n9. Read and Write on .csv.\n10. Read and Write on .json.\n11.Exit.")
         choice=input("\nThe Choice: ")
 
         while True:
@@ -600,6 +646,17 @@ def main():
                         print("Invalid Choice!")
 
                 case "10":
+                    print("Working on .json")
+                    print("\n1. Write\n2. Read")
+                    choice=input("The Choice: ")
+                    if choice == "1":
+                        contact_one.save_to_json()
+                    elif choice == "2":
+                        contact_one.load_from_json()
+                    else:
+                        print("Invalid Choice!")
+
+                case "11":
                     print("Exiting the program!!!")
                     logger.info("Closed the Script!!!!")
                     break
@@ -607,7 +664,7 @@ def main():
                 case default:
                     print("\nInvalid Input!\nTry the other options available!")
 
-            print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Sort by City.\n8. Read and Write on .txt\n9. Read and Write on .csv.\n10. Exit.")
+            print("\nEnter the choice:\n1. Print the Contact book.\n2. Print the Contact Details.\n3. Update the Contact.\n4. Delete contact.\n5. Statistics.\n6. Find Contact\n7. Sort by City.\n8. Read and Write on .txt\n9. Read and Write on .csv.\n10. Read and Write on .json.\n11.Exit.")
             choice=input("\nThe Choice: ")
 
     except ValueError as ve:
