@@ -429,7 +429,6 @@ class AddressBookMain:
             with open("address_book_data.csv", "w", newline='') as file:
                 header = ["Address Book", "Full Name", "Address", "City", "State", "Zipcode", "Phone Number", "Email"]
                 file.write(",".join(header) + "\n")
-            
                 for book_name, contacts in self.system_book.items():
                     for full_name, details in contacts.items():
                         row = [
@@ -442,7 +441,6 @@ class AddressBookMain:
                             details["Phone Number"],
                             details["Email"]
                         ]
-                        # Escape commas in fields by wrapping in quotes
                         row = [f'"{field}"' if "," in str(field) else str(field) for field in row]
                         file.write(",".join(row) + "\n")
                     
