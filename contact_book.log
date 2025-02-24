@@ -558,3 +558,20 @@
 2025-02-23 22:50:19,971, INFO The Address Book available in the system was printed.
 2025-02-23 22:50:21,979, INFO Printed contact details successfully
 2025-02-23 22:50:27,169, INFO Closed the Script!!!!
+2025-02-24 10:18:07,853, INFO Started the Script!!!
+2025-02-24 10:18:14,695, INFO Uploaded a contact into the system
+2025-02-24 10:18:23,387, INFO Loaded address book data from CSV file
+2025-02-24 10:18:24,404, INFO The Address Book available in the system was printed.
+2025-02-24 10:18:26,615, INFO Printed contact details successfully
+2025-02-24 10:18:39,132, INFO Saved address book data to JSON file
+2025-02-24 10:19:24,245, INFO Closed the Script!!!!
+2025-02-24 10:19:25,607, INFO Started the Script!!!
+2025-02-24 10:19:30,383, INFO Uploaded a contact into the system
+2025-02-24 10:19:34,313, INFO Loaded address book data from JSON file
+2025-02-24 10:19:35,372, INFO Printed contact details successfully
+2025-02-24 10:19:38,639, INFO Closed the Script!!!!
+2025-02-24 10:39:49,386, INFO Started the Script!!!
+2025-02-24 10:39:54,305, INFO Uploaded a contact into the system
+2025-02-24 10:39:57,602, INFO Loaded address book data from JSON file
+2025-02-24 10:39:58,401, INFO Printed contact details successfully
+2025-02-24 10:40:02,038, INFO Closed the Script!!!!
